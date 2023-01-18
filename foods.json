@@ -1,0 +1,62 @@
+{   
+    "food": {
+    "food_category": "Carbs",
+    "food_name": "WholeGrain Bread",
+    "protein_gr": "5.0",
+    "carbs_gr": "15.0",
+    "fat_gr": "3.0",
+    "fiber_gr": "5.0",
+    "food_portion":"1 slice",
+    "calories": "80.0"
+  },
+  "food-1": {
+    "food_category": "Vegetables",
+    "food_name": "Lettuce",
+    "protein_gr": "2.0",
+    "carbs_gr": "5.0",
+    "fat_gr": "0.0",
+    "fiber_gr": "2.0",
+    "food_portion":"1 cup",
+    "calories": "25.0"
+  },
+  "food-2": {
+    "food_category": "Meat and Substitutes",
+    "food_name": "Egg",
+    "protein_gr": "5.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "2.0",
+    "fiber_gr": "0.0",
+    "food_portion":"1 piece",
+    "calories": "45.0"
+  },
+  "food-3": {
+    "food_category": "Carbs",
+    "food_name": "Corn Tortilla",
+    "protein_gr": "5.0",
+    "carbs_gr": "15.0",
+    "fat_gr": "2.0",
+    "fiber_gr": "1.0",
+    "food_portion":"1 piece",
+    "calories": "80.0"
+  },
+  "food-4": {
+    "food_category": "Fruit",
+    "food_name": "Papaya",
+    "protein_gr": "2.0",
+    "carbs_gr": "15.0",
+    "fat_gr": "0.0",
+    "fiber_gr": "3.0",
+    "food_portion":"1 cup",
+    "calories": "60.0"
+  },
+  "food-5": {
+    "food_category": "Fat",
+    "food_name": "Olive Oil",
+    "protein_gr": "0.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "5.0",
+    "fiber_gr": "0.0",
+    "food_portion":"1 tablespoon", 
+    "calories": "25.0"
+  }
+}
