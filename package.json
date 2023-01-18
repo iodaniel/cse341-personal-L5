@@ -1,0 +1,22 @@
+{
+  "name": "nutrition-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iodaniel/cse341-personal-L5.git"
+  },
+  "keywords": [
+    "nutrition"
+  ],
+  "author": "Daniel Marz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iodaniel/cse341-personal-L5/issues"
+  },
+  "homepage": "https://github.com/iodaniel/cse341-personal-L5#readme"
+}
