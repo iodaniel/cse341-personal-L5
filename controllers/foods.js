@@ -3,7 +3,7 @@ const { all } = require('../routes');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db('food').collection('food').find();
+  const result = await mongodb.getDb().db('foods').collection('foods').find();
 
   result.toArray().then((lists) => 
   {
@@ -17,8 +17,8 @@ const getSingle = async (req, res, next) => {
   const foodId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
-    .db('food')
-    .collection('food')
+    .db('foods')
+    .collection('foods')
     .find({ _id: foodId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -39,8 +39,8 @@ const createFood = async (req, res) => {
   };
   const response = await mongodb
   .getDb()
-  .db('food')
-  .collection('food')
+  .db('foods')
+  .collection('foods')
   .insertOne(food);
   if (response.acknowledged) {
     res.status(201).json(response);
@@ -63,8 +63,8 @@ const updateFood = async (req, res) => {
   };
   const response = await mongodb
     .getDb()
-    .db('food')
-    .collection('food')
+    .db('foods')
+    .collection('foods')
     .replaceOne({ _id: foodId }, food);
   console.log(response);
   if (response.modifiedCount > 0) {
@@ -80,8 +80,8 @@ const deleteFood = async (req, res) => {
   const foodId = new ObjectId(req.params.id);
   const response = await mongodb
   .getDb()
-  .db('food')
-  .collection('food')
+  .db('foods')
+  .collection('foods')
   .remove({ _id: foodId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
