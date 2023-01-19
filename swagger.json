@@ -5,7 +5,7 @@
     "description": "Food API",
     "version": "1.0.0"
   },
-  "host":"localhost:8089",
+  "host": "food-l5.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
