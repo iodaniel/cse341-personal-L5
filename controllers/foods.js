@@ -14,7 +14,9 @@ const getAll = async (req, res, next) => {
 };
 //changer foodId for userId
 const getSingle = async (req, res, next) => {
-  const foodId = new ObjectId(req.params.id);
+  const foodId =  new ObjectId(req.params.id); 
+  console.log(foodId)
+  //new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
     .db('foods')
@@ -74,7 +76,6 @@ const updateFood = async (req, res) => {
   }
  
 };
-
 
 const deleteFood = async (req, res) => {
   const foodId = new ObjectId(req.params.id);

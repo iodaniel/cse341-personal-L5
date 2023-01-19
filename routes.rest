@@ -1,0 +1,79 @@
+###
+GET http://localhost:8089/foods
+###
+GET http://localhost:8089/
+###
+GET http://localhost:8089/foods/63c8b8f345e0548045c2d8c8
+###
+GET http://localhost:8089/foods/63c8b8f345e0548045c2d8cd
+
+### Create contact 
+POST http://localhost:8089/foods HTTP/1.1 
+content-type: application/json
+
+{
+    "food_category": "Fat",
+    "food_name": "Avocado",
+    "protein_gr": "0.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "5.0",
+    "fiber_gr": "0.0",
+    "food_portion": "1/8 of piece",
+    "calories": "25.0"
+}
+### Update contact 
+PUT http://localhost:8089/foods/63c8c11f8e3cede9b9c65e7b HTTP/1.1 
+content-type: application/json
+
+{
+    "food_category": "Fat",
+    "food_name": "Avocado",
+    "protein_gr": "0.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "5.0",
+    "fiber_gr": "0.0",
+    "food_portion": "1/4 of piece",
+    "calories": "40.0"
+}
+### Delete contact 
+### DELETE contact
+DELETE http://localhost:8089/foods/63c8c272dc16cfd6c2aa0413 HTTP/1.1
+// PRODUCTION Deploy
+###
+GET https://food-l5.onrender.com/foods
+###
+GET https://food-l5.onrender.com/foods/63c8b8f345e0548045c2d8cb
+###
+GET https://food-l5.onrender.com/foods/63c8b8f345e0548045c2d8cb
+###
+GET https://food-l5.onrender.com/foods/63c8b8f345e0548045c2d8cb
+###
+POST http://food-l5.onrender.com/foods HTTP/1.1 
+content-type: application/json
+
+{
+"food_category": "Fat",
+    "food_name": "Honey",
+    "protein_gr": "0.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "5.0",
+    "fiber_gr": "0.0",
+    "food_portion": "1 tablespoon",
+    "calories": "25.0"
+}
+###
+PUT http://food-l5.onrender.com/foods/63c8b8f345e0548045c2d8cd HTTP/1.1 
+content-type: application/json
+
+{
+"food_category": "Fat",
+    "food_name": "Avocado",
+    "protein_gr": "0.0",
+    "carbs_gr": "0.0",
+    "fat_gr": "5.0",
+    "fiber_gr": "0.0",
+    "food_portion": "1/4 of piece",
+    "calories": "50.0"
+}
+###
+DELETE http://food-l5.onrender.com/foods/63c8b8f345e0548045c2d8cd HTTP/1.1
