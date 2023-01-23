@@ -14,6 +14,9 @@ const getAll = async (req, res, next) => {
 };
 //changer foodId for userId
 const getSingle = async (req, res, next) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid food id to find a contact.');
+  }
   const foodId =  new ObjectId(req.params.id); 
   console.log(foodId)
   //new ObjectId(req.params.id);
@@ -52,6 +55,9 @@ const createFood = async (req, res) => {
 };
 
 const updateFood = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid food id to find a contact.');
+  }
   const foodId = new ObjectId(req.params.id);
   const food ={
     food_category: req.body.food_category,
@@ -78,6 +84,9 @@ const updateFood = async (req, res) => {
 };
 
 const deleteFood = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid food id to find a contact.');
+  }
   const foodId = new ObjectId(req.params.id);
   const response = await mongodb
   .getDb()
