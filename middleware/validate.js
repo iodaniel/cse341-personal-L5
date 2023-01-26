@@ -9,7 +9,7 @@ const saveFood = (req, res, next) => {
     fat_gr: 'required|string',
     fiber_gr: 'required|string',
     food_portion: 'required|string',
-    calories: 'required | number'
+    calories: 'required|integer'
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
@@ -25,6 +25,4 @@ const saveFood = (req, res, next) => {
 };
 
 
-module.exports = {
-  saveFood
-};
+module.exports = {saveFood};
