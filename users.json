@@ -1,0 +1,31 @@
+{   
+    "user": {
+    "username": "Akuma",
+    "firstName": "Monic",
+    "lastName": "Saenz",
+    "email": "monic@test.com",
+    "password": "Secure!Password"
+  },
+  "user-1": {
+    "username": "Akane",
+    "firstName": "Daniele",
+    "lastName": "Saratoga",
+    "email": "Dasa@test.com",
+    "password": "Sec!Password"
+  },
+  "user-2": {
+    "username": "Akuma-2",
+    "firstName": "David",
+    "lastName": "Jonhson",
+    "email": "dajo@test.com",
+    "password": "Password1234"
+  },
+  "user-3": {
+    "username": "kakaroto",
+    "firstName": "Robert",
+    "lastName": "Power",
+    "email": "ropo@test.com",
+    "password": "Secu!"
+  }
+ 
+}

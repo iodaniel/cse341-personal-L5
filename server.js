@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();// app 
 //const Joi = require('joi');
-const expressValidator = require('express-validator')
+// const expressValidator = require('express-validator')
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const cors = require('cors');
