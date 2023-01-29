@@ -9,6 +9,8 @@ router.get('/', (req, res) => {
   res.send('Food Data');
 });
 router.get('/', (req, res) => {
-  res.send('User Data');
+  res.send('');
 });
+
+
 module.exports = router;
