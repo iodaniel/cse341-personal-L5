@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   res.send('Food Data');
 });
 router.get('/', (req, res) => {
-  res.send('');
+  res.send('User Data');
 });
 
 
