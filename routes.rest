@@ -1,4 +1,37 @@
 ###
+GET http://localhost:8121/users
+###
+GET http://localhost:8121/users/63d5d900044ff54c3dba064d
+
+### Create contact 
+POST http://localhost:8121/users HTTP/1.1 
+content-type: application/json
+
+{
+  "username": "Dream",
+  "firstName": "Viry",
+  "lastName": "Rocha",
+  "email": "viry@test.com",
+  "password": "Viry!Password"
+}
+
+### Update contact 
+PUT http://localhost:8121/users/63d5dea2140813ea5c955d58 HTTP/1.1 
+content-type: application/json
+
+{
+  "username": "Dream",
+  "firstName": "Viry",
+  "lastName": "Torres",
+  "email": "viry@test.com",
+  "password": "Viry!Password"
+}
+
+
+### DELETE contact
+DELETE http://localhost:8121/foods/63d5dea2140813ea5c955d58 HTTP/1.1
+###
+###
 GET http://localhost:8121/foods
 ###
 GET http://localhost:8121/
@@ -80,3 +113,40 @@ content-type: application/json
 }
 ###
 DELETE http://food-l5.onrender.com/foods/63c8f67d5832c03da87a5c6a HTTP/1.1
+
+
+
+###
+GET https://food-l5.onrender.com/
+
+// PRODUCTION Deploy
+###
+GET https://food-l5.onrender.com/users
+###
+GET https://food-l5.onrender.com/users/63d5dea2140813ea5c955d58
+###
+POST http://food-l5.onrender.com/users HTTP/1.1 
+content-type: application/json
+
+{
+  "username": "Dream",
+  "firstName": "Viry",
+  "lastName": "Rocha",
+  "email": "viry@test.com",
+  "password": "Viry!Password"
+}
+
+###
+PUT http://food-l5.onrender.com/users/63d5dea2140813ea5c955d58 HTTP/1.1 
+content-type: application/json
+
+{
+  "username": "Dream",
+  "firstName": "Viry",
+  "lastName": "Torres",
+  "email": "viry@test.com",
+  "password": "Viry!Password"
+}
+
+###
+DELETE http://food-l5.onrender.com/users/63d5dea2140813ea5c955d58 HTTP/1.1
