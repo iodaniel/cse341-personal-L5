@@ -1,12 +1,12 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
+// const dotenv = require('dotenv');
+// dotenv.config();
 const passport = require('passport');
 const GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
-
+const GOOGLE_CLIENT_ID="454712106113-49m8bp3812fnjfvvnlaa0l0sr6tad40g.apps.googleusercontent.com"
+const GOOGLE_CLIENT_SECRET="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"
 passport.use(new GoogleStrategy({
-    clientID:process.env.GOOGLE_CLIENT_ID,
-    clientSecret:process.env.GOOGLE_CLIENT_SECRET,
+    clientID:GOOGLE_CLIENT_ID,
+    clientSecret:GOOGLE_CLIENT_SECRET,
     callbackURL: "https://food-l5.onrender.com/foods/google/callback",
     passReqToCallback: true
   },

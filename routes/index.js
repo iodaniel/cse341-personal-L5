@@ -20,6 +20,18 @@ router.get('/users', (req, res) => {
 router.get('/auth/google', 
   passport.authenticate('google', {scope: ['email', 'profile']})
 )
+
+router.get('/google/callback', 
+  passport.authenticate('google',{
+    successRedirect: '/foods', 
+    failureRedirect: '/auth/failure', 
+  })
+);
+
+router.get('/auth/failure', (req, res) => {
+  res.send('Something went wrong try again...');
+
+});
 //scope is what type of information we need to request to google. 
 router.get('/protected', (req, res) => {
   res.send('Hello');
