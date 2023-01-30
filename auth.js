@@ -7,7 +7,7 @@ const GOOGLE_CLIENT_SECRET="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"
 passport.use(new GoogleStrategy({
     clientID:GOOGLE_CLIENT_ID,
     clientSecret:GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://food-l5.onrender.com/foods/",
+    callbackURL: "https://food-l5.onrender.com/foods/google/callback",
     passReqToCallback: true
   },
   function(request, accessToken, refreshToken, profile, done) {
