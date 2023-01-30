@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 router.get('/', (req, res) => {
   res.send('User Data');
 });
+
 router.get('/users', (req, res) => {
   res.send('<a href="/auth/google">Authenticate with Google</a>');
 });
