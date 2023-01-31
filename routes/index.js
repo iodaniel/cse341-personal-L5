@@ -18,7 +18,7 @@ function isLoggedIn(req, res, next){
 router.use('/', require('./swagger'));
 //router.use('/foods', isLoggedIn, require('./foods'));
 router.use('/foods', require('./foods'));
-router.get("/", (req, res) => {
+router.get("/users", (req, res) => {
   res.redirect("/users");
 })
 router.use('/users', require('./users'));
